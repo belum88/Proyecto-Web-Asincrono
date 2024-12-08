@@ -12,7 +12,7 @@ let lastUserInput;
 export const fetchPhotos = async (
   userInput = "technology",
   page = 1,
-  perPage = 24
+  perPage = 15
 ) => {
   const accessKey = "PExlSM_mtUUZj1H9nmIaD5tFsHTiRfJkEYR8EO8rr4Y";
 
