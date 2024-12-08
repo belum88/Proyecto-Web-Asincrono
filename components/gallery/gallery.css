@@ -1,0 +1,41 @@
+#image-grid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.photo {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.like-icon {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.like-icon > img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.photo:hover {
+    cursor: pointer;
+    opacity: 40%;
+}
+
+.photo:hover .like-icon {
+    display: block; 
+}
